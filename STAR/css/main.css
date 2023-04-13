@@ -2,32 +2,116 @@ body {
   font-family: Arial,sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
 
 
 header {
-  background-color: aqua;
+  background-color: #fff;
   width: 100%;
-  height: 80px;
-  /* display: flex; */
+  height: 20px;
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.nav1 ul {
+  display: flex;
   
 }
 
-.nav {
+.nav2 ul {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
-.nav:nth-child(6) {
-  font-weight: 600; 
+.nav3 ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
-nav {
-  height: 100%;
+.nav1 {
+  flex: 1;
 }
 
-.menu {
+.nav2 {
+  flex: 1;
+}
+
+.nav3 {
+  flex: 1;
+
+}
+
+.nav1 ul li {
+  font-size: 14px;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.nav3 ul li {
+  font-size: 14px;
+  align-items: center;
+  margin-right: 40px;
   
+}
+
+.nav2 ul li {
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center ;
+  align-items: center;
+}
+
+.left {
+  height: 438px;
+  width: 110px;
+  font-size: 14px;
+  margin: 20px 0 0 5px;
+}
+
+.left1 ul li {
+  margin-bottom: 5px;
+}
+
+.left1 ul :nth-child(1) a {
+  color: #006d3c;
+  
+}
+
+.left1 ul :nth-child(2) a {
+  color: #00a0e9;
+}
+
+.left1 ul :nth-child(3) a {
+  color: #1d2088;
+}
+
+.left1 ul :nth-child(4) a {
+  color: #e4007f;
+}
+
+.left2 {
+  margin-top: 30px;
+}
+
+.left2 ul li {
+  margin-bottom: 5px;
+}
+
+.left3 {
+  margin: 80px 0 80px 0;
+}
+
+.left3 input {
+  box-sizing: border-box;
+  width: 110px;
+  height: 20px;
+  border-bottom: 1px solid #640303;
+  outline: none;
+  background-color: #fff;
+  font-size: 14px;
 }
