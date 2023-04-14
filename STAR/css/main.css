@@ -1,5 +1,6 @@
 body {
   font-family: Arial,sans-serif;
+  position: relative;
 }
 
 a {
@@ -14,6 +15,7 @@ header {
   height: 20px;
   display: flex;
   border-bottom: 1px solid #000;
+  margin-top: 5px;
 }
 
 .nav1 ul {
@@ -47,21 +49,21 @@ header {
 }
 
 .nav1 ul li {
-  font-size: 14px;
+  font-size: 13px;
   align-items: center;
   margin-right: 40px;
 }
 
 .nav3 ul li {
-  font-size: 14px;
+  font-size: 13px;
   align-items: center;
   margin-right: 40px;
   
 }
 
 .nav2 ul li {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 13 px;
+  font-weight: 600;
   justify-content: center ;
   align-items: center;
 }
@@ -69,7 +71,7 @@ header {
 .left {
   height: 438px;
   width: 110px;
-  font-size: 14px;
+  font-size: 12px;
   margin: 20px 0 0 5px;
 }
 
@@ -103,15 +105,89 @@ header {
 }
 
 .left3 {
-  margin: 80px 0 80px 0;
+  margin: 50px 0 50px 0;
 }
 
 .left3 input {
   box-sizing: border-box;
   width: 110px;
   height: 20px;
-  border-bottom: 1px solid #640303;
+  border-bottom: 1px solid #000;
   outline: none;
   background-color: #fff;
   font-size: 14px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+
+.left4 {
+  font-size: 14px;
+}
+
+.left4 ul li {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.left4 ul :nth-child(1) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main {
+  width: 100%;
+  height: 3000px;
+  margin: 0 auto;
+  position: fixed;
+  left: 300px;
+  top: 110px;
+  word-wrap: wrap;
+}
+
+.main ul {
+  display: flex;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.main ul li a {
+  margin: 10px;
+}
+
+.main .main1 {
+  margin-top: 20px;
+}
+
+.img {
+  display: flex;
+}
+
+.img div {
+  width: 25%;
+  /* display: flex; */
+}
+
+.img img {
+  width: 300px;
+  height: 500px;
+  margin-right: 50px;
+}
+
+.img {
+  display: flex;
+}
+
+.img span {
+  font-size: 13px;
+  align-items: center ;
+  display: block;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.name {
+  margin-bottom: 30px;
+  display: block;
 }
