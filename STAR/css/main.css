@@ -5,6 +5,9 @@ body {
   width: 100%;
   word-wrap: wrap;
   height: 100%;
+  /* max-height: 2500px; */
+  /* max-width: 1700px; */
+  /* overflow: hidden; */
 }
 
 a {
@@ -20,6 +23,7 @@ header {
   display: flex;
   border-bottom: 1px solid #000;
   margin-top: 5px;
+  position: fixed;
 }
 
 .nav1 ul {
@@ -84,6 +88,7 @@ header {
   width: 110px;
   font-size: 12px;
   margin: 20px 0 0 5px;
+  position: fixed;
 }
 
 .left1 ul li {
@@ -148,13 +153,14 @@ header {
 }
 
 .main {
-  width: 100%px;
+  width: 15 00px;
   height: 3000px;
   margin: 0 auto;
-  position: fixed;
-  left: 300px;
-  top: 110px;
+  position: absolute;
+  left: 350px;
+  top: 105px;
   word-wrap: wrap;
+  /* overflow: hidden; */
 }
 
 .main ul {
@@ -175,6 +181,7 @@ header {
 .img {
   display: flex;
   word-wrap: wrap;
+  flex-wrap: wrap;
   /* width: 5000px; */
   /* height: 3000px; */
 }
@@ -183,7 +190,7 @@ header {
   width: 350px;
   /* display: flex; */
   position: relative;
-  /* word-wrap: wrap; */
+  word-wrap: wrap;
 
 }
 
@@ -211,6 +218,8 @@ header {
   margin-bottom: 30px;
   display: block;
 }
+
+
 
 .footer {
   position: fixed;
