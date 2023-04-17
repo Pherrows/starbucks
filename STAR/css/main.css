@@ -22,8 +22,10 @@ header {
   height: 20px;
   display: flex;
   border-bottom: 1px solid #000;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   position: fixed;
+  z-index: 10;
+  
 }
 
 .nav1 ul {
@@ -81,6 +83,7 @@ header {
   font-weight: 600;
   justify-content: center ;
   align-items: center;
+  background-color: #fff;
 }
 
 .left {
@@ -91,8 +94,13 @@ header {
   position: fixed;
 }
 
+.left1 ul {
+  margin-top: 30px;
+}
+
 .left1 ul li {
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .left1 ul :nth-child(1) a {
