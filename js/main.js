@@ -120,3 +120,45 @@ promotionToggleBtn.addEventListener("click", function () {
     promotionToggleIcon.textContent = "download";
   }
 });
+
+// 유튜브 섹션 위에 부유 요소 애니메이션 처리
+// gsap.to(요소, 지속시간, 옵션: {})
+// 옵션 참고: https://greensock.com/docs/v3/GSAP/gsap.to()
+gsap.to('.floatingl', 1.5, {
+  delay: 1, // 얼마나 늦게 애니메이션을 시작할 것인지 지연시간 설정
+  y: 15, // transform: translateY(); 와 같음 수직으로 얼마나 움직일지 설정
+  repeat: -1, // 몇 번 반복하는지를 성정 -1은 무한반복
+  yoyo: true, // 한 번 재생된 애니메이션을 다시 뒤로 재생
+  ease: Power1.easeInOut // Easing 함수 적용 느리게 -빠르게 -느리게
+});
+
+gsap.to('.floating2', 2, {
+  delay: 0.5, // 얼마나 늦게 애니메이션을 시작할 것인지 지연시간 설정
+  y: 15, // transform: translateY(); 와 같음 수직으로 얼마나 움직일지 설정
+  repeat: -1, // 몇 번 반복하는지를 성정 -1은 무한반복
+  yoyo: true, // 한 번 재생된 애니메이션을 다시 뒤로 재생
+  ease: Power1.easeInOut // Easing 함수 적용 느리게 -빠르게 -느리게
+});
+
+gsap.to('.floating3', 2.5, {
+  delay: 1.5, // 얼마나 늦게 애니메이션을 시작할 것인지 지연시간 설정
+  y: 15, // transform: translateY(); 와 같음 수직으로 얼마나 움직일지 설정
+  repeat: -1, // 몇 번 반복하는지를 성정 -1은 무한반복
+  yoyo: true, // 한 번 재생된 애니메이션을 다시 뒤로 재생
+  ease: Power1.easeInOut // Easing 함수 적용 느리게 -빠르게 -느리게
+});
+
+// 어워즈 섹션 슬라이드 기능
+
+new Swiper('.awards .swiper', {
+  // direction: 'horizontal', // 수평 슬라이드 (기본값)
+  loop: true, // 반복 재생 여부
+  autoplay: true,
+  slidesPerView: 5, // 한번에 보여줄 슬라이드 개수 (기본값1)
+  spacBetween: 30, // 슬라이드 사이여백 (간격) px
+  centeredSlides: true,  // 1번 슬라이드가 가운데 보이기
+  navigation: {  //슬라이드 이전/다음 버튼 사용
+    nextEl: ".awards .swiper-button-next",
+    prevEl: ".awards .swiper-button-prev",
+  }
+});
